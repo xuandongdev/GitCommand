@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./img/github.jpg">
+    <title>Git & Github</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <header>
+        <h1>PUSH VÀ CLONE CODE REPOSITORY GITHUB STEP BY STEP</h1>
+    </header>
+    <main>
+        <h2>TẠO DỰ ÁN MỚI & PUSH CODE</h2>
+        <ol>
+            <li>Tạo dự án repository mới trên Github (đặt tên và create)</li>
+            <li>Tạo dự án trên máy tính dùng để code và lưu trữ cục bộ (New folder)</li>
+            <li>Khởi tạo git: để khởi tạo một kho lưu trữ git cục bộ - Local repository</li>
+            <ul>
+                <li>Mở terminal trên VS Code</li>
+                <li>Config mặc định chọn Git bash</li>
+                <li>git status : để kiểm tra trạng thái git</li>
+                <li>git init : khởi tạo một kho lưu trữ Local</li>
+            </ul>
+            <li>add thư mục dự án vào staging area chờ commit</li>
+            <ul>
+                <li>git add . : add tất cả thư mục</li>
+                <li>git add tên_thư_mục : add lẻ thư mục, tệp</li>
+            </ul>
+            <li>Commit và đẩy code lên GitHub</li>
+            <ul>
+                <li>git commit -m "điền nội dung commit vào đây" : sau khi commit code đẩy vào local repository chờ push lên GitHub</li>
+                <li>git branch -M main : do trên GitHub là main mà trong máy tính cục bộ là master nên cần cập nhật lại</li>
+                <li>git remote add origin Đường_dẫn_đến_dự_án (Copy link repository trên Github) : Remote đến máy chủ git</li>
+                <li>git push -u origin main : push code lên máy chủ Git</li>
+            </ul>
+        </ol>
+        <h2>PUSH CODE LÊN DỰ ÁN CÓ SẴN</h2>
+        <ol>
+            <li>git remote add origin Đường_dẫn_đến_dự_án</li>
+            <li>git branch -M main</li>
+            <li>git push -u origin main</li>
+        </ol>
+        <h2>CLONE CODE TỪ REPOSITORY KHÁC VỀ MÁY</h2>
+        <ul>
+            <li>git clone Đường_dẫn_đến_dự_án</li>
+        </ul>
+        <h2>Git Branches Explained</h2>
+        <h3>Tạo, chuyển đổi và quản lí các nhánh dự án</h3>
+        <ol>
+            <li>git branch : kiểm tra cục bộ nhánh git trên máy tính</li>
+            <li>git branch -a : kiểm tra nhánh trên github và máy tính dấu * ở phía nhánh nào tức là đang đứng ở nhánh đó</li>
+            <li>git branch -c tên_nhánh_mới : tạo ra 1 nhánh mới nhưng vẫn ở nhánh hiện tại, chỉ tạo ở máy cục bộ</li>
+            <li>git checkout tên_nhánh : qua nhánh tên_nhánh</li>
+            <li>git checkout -b tên_nhánh_mới : tạo ra nhánh mới và qua nhánh đó luôn, chỉ tạo ở máy cục bộ</li>
+            <li>git push -u origin tên_nhánh : push tên_nhánh lên github</li>
+            <li>git branch -d tên_nhánh : không đứng ở tên_nhánh, xóa tên_nhánh khỏi máy cục bộ</li>
+            <li>Nếu tên_nhánh đang thực hiện commit nhưng vẫn muốn xóa tên_nhánh ta thực hiện: git branch -D tên_nhánh</li>
+            <li>git push -d origin tên_nhánh : xóa tên_nhánh khỏi github</li>
+        </ol>
+    </main>
+    <footer>
+        <p>
+            Bùi Xuân Đông &copy; <br>
+            <a href="https://www.facebook.com/nauXgnoD.Y/" target="_blank">Facebook</a>
+            <a href="https://github.com/xuandongdev" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/xuandongdev/" target="_blank">LinkedIn</a>
+            <a href="#">Về Đầu Trang</a>
+        </p>
+    </footer>
+</body>
+</html>
